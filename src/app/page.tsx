@@ -25,8 +25,6 @@ export const metadata:Metadata = {
 
 export default async function Home() {
   const supabase = await createClient()
-
-  const { data } = await supabase.auth.getUser()
   return (
     <main>
       <section className=' w-full h-[70vh] flex flex-col justify-center items-center gap-2 border-b-2 border-greenleaf'>
