@@ -5,7 +5,6 @@ import {
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
-  AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle,
@@ -18,7 +17,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { createClient } from "@/lib/supabase/server";
-import { Button } from "@/components/ui/button";
 
 export const metadata:Metadata = {
   title:"home",

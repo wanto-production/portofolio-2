@@ -1,7 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
@@ -21,7 +20,6 @@ export default async function RootLayout ({
 }: Readonly<{
   children: React.ReactNode;
 }>){
-  const headerlist = await headers()
   const supabase = await createClient()
   const { data:session } = await supabase.auth.getUser()
 

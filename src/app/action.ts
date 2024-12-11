@@ -6,5 +6,5 @@ export async function logOut() {
   const supabase = await createClient()
 
 
-  const { error } = await supabase.auth.signOut()
+  await supabase.auth.signOut()
 }
